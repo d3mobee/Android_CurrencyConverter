@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#19A699"
+    android:background="#00D9BB"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/Converter"
-            android:textColor="#252525"
+            android:textColor="#00473E"
             android:textSize="38sp"
             android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
             android:layout_height="40dp"
             android:text="@string/Value"
             android:background="@drawable/design"
-            android:textColor="#252525"
+            android:textColor="#00473E"
             android:layout_marginRight="20dp"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -53,9 +53,9 @@
             android:layout_width="145dp"
             android:layout_height="40dp"
             android:textSize="12sp"
-            android:textColor="#C6C6C6"
+            android:textColor="#420740"
             android:hint="@string/Hint"
-            android:textColorHint="#AAAAAA"
+            android:textColorHint="#FFFFFF"
             android:background="@drawable/entry"
             android:textStyle="bold"/>
 
@@ -74,7 +74,7 @@
             android:text="@string/From"
             android:background="@drawable/design"
             android:layout_marginRight="10dp"
-            android:textColor="#252525"
+            android:textColor="#00473E"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -97,7 +97,7 @@
             android:layout_width="60dp"
             android:layout_height="40dp"
             android:text="@string/To"
-            android:textColor="#252525"
+            android:textColor="#00473E"
             android:layout_marginRight="10dp"
             android:background="@drawable/design"
             android:textSize="16sp"
@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/design"
             android:text="@string/ToConvert"
-            android:textColor="#252525"
+            android:textColor="#00473E"
             android:textSize="26sp"
             android:textStyle="bold" />
 
@@ -142,7 +142,7 @@
             android:layout_height="40dp"
             android:background="@drawable/design"
             android:text=""
-            android:textColor="#252525"
+            android:textColor="#00473E"
             android:textSize="16sp"
             android:textStyle="bold" />
 

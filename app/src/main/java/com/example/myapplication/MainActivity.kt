@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.button)
         val result: TextView = findViewById(R.id.result)
 
-        val clist1 = arrayOf("USD", "RUB", "EUR")
+        val clist1 = arrayOf("USD", "RUB", "EUR", "GBP")
         val aa1 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, clist1)
 
         spinner1.adapter = aa1
 
-        val clist2 = arrayOf("RUB", "USD", "EUR")
+        val clist2 = arrayOf("RUB", "USD", "EUR", "GBP")
         val aa2 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, clist2)
 
         spinner2.adapter = aa2
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 result.text = "Error"
             }
 
-            else if ((c1 == "USD" && c2 == "USD") || (c1 == "RUB" && c2 == "RUB") || (c1 == "EUR" && c2 == "EUR")) {
+            else if ((c1 == "USD" && c2 == "USD") || (c1 == "RUB" && c2 == "RUB") || (c1 == "EUR" && c2 == "EUR") || (c1 == "GBP" && c2 == "GBP")) {
                 result.text = a.toString()
             }
 
@@ -46,29 +46,60 @@ class MainActivity : AppCompatActivity() {
             }
 
             else if (c1 == "USD" && c2 == "EUR") {
-                val a2: Double = a/1.15
-                result.text = a2.toString()
+                val a1: Double = a/1.15
+                result.text = a1.toString()
+            }
+
+            else if (c1 == "USD" && c2 == "GBP") {
+                val a1: Double = a/1.26
+                result.text = a1.toString()
             }
 
             else if (c1 == "RUB" && c2 == "USD") {
-                val a3: Double = a/70.26
-                result.text = a3.toString()
+                val a1: Double = a/70.26
+                result.text = a1.toString()
             }
 
             else if (c1 == "RUB" && c2 == "EUR") {
-                val a4: Double = a/78.95
-                result.text = a4.toString()
+                val a1: Double = a/78.95
+                result.text = a1.toString()
+            }
+
+            else if (c1 == "RUB" && c2 == "GBP") {
+                val a1: Double = a/87.7
+                result.text = a1.toString()
             }
 
             else if (c1 == "EUR" && c2 == "USD") {
-                val a5: Double = a*1.12
-                result.text = a5.toString()
+                val a1: Double = a*1.12
+                result.text = a1.toString()
+            }
+
+            else if (c1 == "EUR" && c2 == "RUB"){
+                val a1: Double = a*78.96
+                result.text = a1.toString()
+            }
+
+            else if (c1 == "EUR" && c2 == "GBP"){
+                val a1: Double = a/1.11
+                result.text = a1.toString()
+            }
+
+            else if (c1 == "GBP" && c2 == "EUR"){
+                val a1: Double = a*1.12
+                result.text = a1.toString()
+            }
+
+            else if (c1 == "GBP" && c2 == "USD"){
+                val a1: Double = a*1.26
+                result.text = a1.toString()
             }
 
             else {
-                val a6: Double = a*78.92
-                result.text = a6.toString()
+                val a1: Double = a*87.7
+                result.text = a1.toString()
             }
+
 
 
         }
