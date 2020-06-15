@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Converter">Конвертер Валют</string>
+    <string name="Value">Значение:</string>
+    <string name="Hint">Введите значение</string>
+    <string name="From">Из</string>
+    <string name="To">В</string>
+    <string name="ToConvert">КОНВЕРТИРОВАТЬ</string>
+</resources>
